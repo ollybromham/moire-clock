@@ -1,21 +1,23 @@
 const hour = document.querySelector('.hour');
-const minute = document.querySelector('.minute')
+const minute = document.querySelector('.minute');
 
-function getTime(){
+function getTime(noTransition){
   let d = new Date();
   let h = (d.getHours() / 2);
   let m = d.getMinutes();
 
-  if (h === 0) {
-    hour.classList.remove('transition')
-  } else {
-    hour.classList.add('transition')
-  }
+  if (!noTransition) {
+    if (h === 0) {
+      hour.classList.remove('transition')
+    } else {
+      hour.classList.add('transition')
+    }
 
-  if (m === 0) {
-    minute.classList.remove('transition')
-  } else {
-    minute.classList.add('transition')
+    if (m === 0) {
+      minute.classList.remove('transition')
+    } else {
+      minute.classList.add('transition')
+    }
   }
 
   hour.style.transform = 'rotate(' + (h * 30) + 'deg)';
@@ -28,6 +30,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
     minute.appendChild(document.createElement('li'))
   }
 
-  getTime();
+  getTime(true);
   setInterval(getTime, 100);
 });
