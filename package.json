@@ -9,7 +9,6 @@
     "dev": "parcel src/index.html --open"
   },
   "devDependencies": {
-    "cssnano": "^5.0.1",
-    "postcss": "^8.2.12"
+    "parcel": "1.12.4"
   }
 }
