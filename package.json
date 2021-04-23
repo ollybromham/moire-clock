@@ -1,0 +1,11 @@
+{
+  "name": "Moiré Clock",
+  "description": "",
+  "author": "Olly Bromham",
+  "version": "1.0.0",
+  "license": "ISC",
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "dev": "parcel src/index.html --open"
+  }
+}
