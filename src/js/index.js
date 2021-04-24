@@ -8,6 +8,7 @@ function getTime(noTransition){
 
   if (!noTransition) {
     hour.classList.add('transition')
+    minute.classList.add('transition')
   }
 
   hour.style.transform = 'rotate(' + (h * 30) + 'deg)';
