@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  list-style: none;
 }
 
 .app {
@@ -17,21 +16,13 @@
   overflow: hidden;
 }
 
-ul {
+svg {
   position: absolute;
   display: flex;
   transform-origin: center;
   transition: transform 0s ease;
 }
 
-ul.transition {
+svg.transition {
   transition: transform 1s ease;
-}
-
-li {
-  height: 2200px;
-  width: 4px;
-  background: black;
-  margin-right: 4px;
-  display: inline-block;
 }
