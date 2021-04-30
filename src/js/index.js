@@ -3,7 +3,7 @@ const minute = document.querySelector('.minute');
 
 function getTime(noTransition){
   let d = new Date();
-  let h = (d.getHours() / 2);
+  let h = (d.getHours() % 12);
   let m = d.getMinutes();
 
   if (!noTransition) {
